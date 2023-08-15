@@ -33,7 +33,7 @@ const App = () => {
             <View
               style={[
                 styles.tabIconsBtn,
-                {backgroundColor: select == 0 ? '#A74AC7' : '#bdbdbd'},
+                {backgroundColor: select == 0 ? '#6600cc' : '#bdbdbd'},
               ]}>
               <Image
                 source={require('./src/image/house.png')}
@@ -43,7 +43,7 @@ const App = () => {
                 ]}
               />
             </View>
-            <Text style={{color: select == 0 ? '#A74AC7' : '#bdbdbd'}}>Home</Text>
+            <Text style={{color: select == 0 ? '#6600cc' : '#bdbdbd'}}>Home</Text>
           </TouchableOpacity>
 
           <TouchableOpacity
@@ -54,7 +54,7 @@ const App = () => {
             <View
               style={[
                 styles.tabIconsBtn,
-                {backgroundColor: select == 1 ? '#A74AC7' : '#bdbdbd'},
+                {backgroundColor: select == 1 ? '#6600cc' : '#bdbdbd'},
               ]}>
               <Image
                 source={require('./src/image/orders.png')}
@@ -64,7 +64,7 @@ const App = () => {
                 ]}
               />
             </View>
-            <Text style={{color: select == 1 ? '#A74AC7' : '#bdbdbd'}}>Store</Text>
+            <Text style={{color: select == 1 ? '#6600cc' : '#bdbdbd'}}>Store</Text>
           </TouchableOpacity>
 
           <TouchableOpacity
@@ -75,7 +75,7 @@ const App = () => {
             <View
               style={[
                 styles.tabIconsBtn,
-                {backgroundColor: select == 2 ? '#A74AC7' : '#bdbdbd'},
+                {backgroundColor: select == 2 ? '#6600cc' : '#bdbdbd'},
               ]}>
               <Image
                 source={require('./src/image/insurance.png')}
@@ -85,7 +85,7 @@ const App = () => {
                 ]}
               />
             </View>
-            <Text style={{color: select == 2 ? '#A74AC7' : '#bdbdbd'}}>Insurence</Text>
+            <Text style={{color: select == 2 ? '#6600cc' : '#bdbdbd'}}>Insurence</Text>
           </TouchableOpacity>
 
           <TouchableOpacity
@@ -96,7 +96,7 @@ const App = () => {
             <View
               style={[
                 styles.tabIconsBtn,
-                {backgroundColor: select == 3 ? '#A74AC7' : '#bdbdbd'},
+                {backgroundColor: select == 3 ? '#6600cc' : '#bdbdbd'},
               ]}>
               <Image
                 source={require('./src/image/rupee.png')}
@@ -106,7 +106,7 @@ const App = () => {
                 ]}
               />
             </View>
-            <Text style={{color: select == 3 ? '#A74AC7' : '#bdbdbd'}}>Wealth</Text>
+            <Text style={{color: select == 3 ? '#6600cc' : '#bdbdbd'}}>Wealth</Text>
           </TouchableOpacity>
 
           <TouchableOpacity
@@ -117,7 +117,7 @@ const App = () => {
             <View
               style={[
                 styles.tabIconsBtn,
-                {backgroundColor: select == 4 ? '#A74AC7' : '#bdbdbd'},
+                {backgroundColor: select == 4 ? '#6600cc' : '#bdbdbd'},
               ]}>
               <Image
                 source={require('./src/image/transaction.png')}
@@ -127,7 +127,7 @@ const App = () => {
                 ]}
               />
             </View>
-            <Text style={{color: select == 4 ? '#A74AC7' : '#bdbdbd'}}>History</Text>
+            <Text style={{color: select == 4 ? '#6600cc' : '#bdbdbd'}}>History</Text>
           </TouchableOpacity>
         </View>
       </View>
@@ -147,7 +147,7 @@ const styles = StyleSheet.create({
     height: verticalScale(70),
     position: 'absolute',
     bottom: 0,
-    backgroundColor: '#f2f2f2',
+    backgroundColor: 'white',
   },
   bottomNev2: {
     width: '100%',
