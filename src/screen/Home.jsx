@@ -14,7 +14,7 @@ import {
   scale,
   verticalScale,
 } from 'react-native-size-matters';
-
+import ComonHeader from './ComonHeader';
 const Home = () => {
   return (
     <View style={styles.container}>
@@ -23,46 +23,7 @@ const Home = () => {
         backgroundColor="#6b00b3"
         translucent={true}
       />
-      <View style={styles.header}>
-        <View style={styles.header2}>
-          <View style={styles.headerLift}>
-            <View>
-              <Image source={require('../image/boy.png')} style={styles.user} />
-              <Image
-                source={require('../image/india.png')}
-                style={styles.flag}
-              />
-            </View>
-            <View style={{marginLeft: moderateScale(10)}}>
-              <View style={{flexDirection: 'row', alignItems: 'center'}}>
-                <Text style={styles.home}>Home</Text>
-                <Image
-                  source={require('../image/down.png')}
-                  style={styles.down}
-                />
-              </View>
-              <Text style={styles.address}>349, House No 2, Tezpur, Assam</Text>
-            </View>
-          </View>
-          <View style={styles.headerRight}>
-            <Image
-              source={require('../image/qrCode.png')}
-              style={styles.qrcode}
-            />
-            <Image
-              source={require('../image/bell.png')}
-              style={[
-                styles.qrcode,
-                {marginLeft: moderateScale(15), marginRight: moderateScale(16)},
-              ]}
-            />
-            <Image
-              source={require('../image/information.png')}
-              style={styles.qrcode}
-            />
-          </View>
-        </View>
-      </View>
+      <ComonHeader/>
       <ScrollView>
         <View style={styles.update}>
           <View style={styles.updateTop}>
@@ -148,7 +109,7 @@ const Home = () => {
             <Text style={styles.otherOptionsText}>Refer & Get 100</Text>
           </TouchableOpacity>
         </View>
-        <View style={[styles.rechargeAndBills,{marginBottom: moderateVerticalScale(100)}]}>
+        <View style={styles.rechargeAndBills}>
           <Text style={styles.heading}>Recharge & Pay Bills</Text>
           <View style={styles.transferView}>
             <TouchableOpacity style={styles.transferTab}>
@@ -241,10 +202,7 @@ const Home = () => {
               <View style={[styles.transferCard]}>
                 <Image
                   source={require('../image/next.png')}
-                  style={[
-                    styles.icons,
-                    {height: scale(15), width: scale(15)}
-                  ]}
+                  style={[styles.icons, {height: scale(15), width: scale(15)}]}
                 />
               </View>
               <Text style={styles.transferText}>{'See All...'}</Text>
@@ -470,5 +428,6 @@ const styles = StyleSheet.create({
     alignSelf: 'center',
     height: verticalScale(210),
     width: '94%',
+    marginBottom: moderateVerticalScale(100),
   },
 });
